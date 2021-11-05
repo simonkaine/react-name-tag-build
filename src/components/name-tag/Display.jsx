@@ -17,7 +17,7 @@ export default function Display({ onNameSubmit, onGreetingSubmit }) {
           'marginLeft': '50px'
         }}>
           <h1>{onGreetingSubmit}</h1>
-          <h2>My name is: {onNameSubmit}</h2>
+          <h2>{onNameSubmit}</h2>
         </div>
       </div>
     </figure>

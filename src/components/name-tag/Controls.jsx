@@ -6,19 +6,24 @@ import React from 'react';
 export default function Controls({ onNameChange, onGreetingChange, onSubmit }) {
   return (
     <form onSubmit={onSubmit}>
-      <label >Greeting
+      <label>
+          Greeting
         <input 
+          aria-label="greeting" 
           type="text" 
           onChange={onGreetingChange}
-          aria-label="greeting"></input>
+        />
       </label>
 
-      <label >name
+      <label>
+          name
         <input 
+          aria-label="name" 
           type="text" 
           onChange={onNameChange}
-          aria-label="name"></input>
+        />
       </label>
+
       <button aria-label="button">SUBMIT</button>
     </form>
   );

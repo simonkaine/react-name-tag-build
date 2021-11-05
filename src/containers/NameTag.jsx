@@ -3,7 +3,7 @@ import Controls from '../components/name-tag/Controls';
 import Display from '../components/name-tag/Display';
 
 export default class NameTag extends Component {
-    state = {onNameSubmit: '', onGreetingSubmit: ''};
+    state = { onNameSubmit: '', onGreetingSubmit: '' };
 
     handleNameChange = (event) => {
         this.setState({ onNameSubmit: event.target.value });
@@ -15,11 +15,11 @@ export default class NameTag extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.setState({onNameSubmit: this.state.onNameSubmit, onGreetingSubmit: this.state.onGreetingSubmit})
+        this.setState({ onNameSubmit: this.state.onNameSubmit, onGreetingSubmit: this.state.onGreetingSubmit })
     }
 
     render() {
-        const {onGreetingSubmit, onNameSubmit } = this.state;
+        const { onGreetingSubmit, onNameSubmit } = this.state;
         return (
             <>
             <Controls 
